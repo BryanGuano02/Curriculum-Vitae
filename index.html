@@ -24,7 +24,7 @@
 
         main {
             display: flex;
-            flex-direction: row;
+            padding-bottom: 2em;
         }
 
         header {
@@ -32,7 +32,7 @@
             flex-direction: row;
         }
 
-        #header-nombre {
+        #header-foto {
             width: 18em;
             height: 18em;
             background: #000;
@@ -41,7 +41,7 @@
             justify-content: center;
         }
 
-        #header-nombre div {
+        #header-foto div {
             background: #fff;
             width: 13em;
             height: 0.25em;
@@ -64,7 +64,6 @@
             font-family: 'IBM Plex Sans', serif;
             letter-spacing: 0.35em;
             word-spacing: 0.2em;
-
         }
 
         #contacto-actividad {
@@ -98,7 +97,7 @@
 
         #section-izquierda {
             width: 32em;
-            padding-left: 1.5em;
+            padding-left: 3em;
         }
 
         .section-titulo {
@@ -137,15 +136,68 @@
             padding: 0.9em 0 0 0;
         }
 
+        li div {
+            display: flex;
+        }
+
+        .portafolio-subtitulo {
+            font-weight: 600;
+            padding-right: 0.4em;
+        }
+
+        .portafolio-texto {
+            padding: 0.3em 0 0.3em 0;
+        }
+
         #section-derecha {
             width: 62em;
+            padding-right: 3em;
+
+        }
+
+        @media (max-width: 720px) {
+            #contacto-nombre {
+                font-size: 2.5em;
+            }
+
+            #contacto-actividad {
+                font-size: 1.4em;
+                padding-bottom: 0.8em;
+                letter-spacing: 0.3em;
+            }
+
+            #header-foto {
+                width: 15em;
+                height: 15em;
+            }
+
+            #header-contacto {
+                width: 75em;
+                height: 15em;
+                padding-left: 1.1em;
+            }
+
+            #contacto-nombre {
+                font-size: 2.5em;
+                padding-bottom: 0.1em;
+            }
+
+            .contacto-info i {
+                padding-right: 0.7em;
+                font-size: 1.2em;
+            }
+
+            .contacto-info p {
+                font-size: 1em;
+            }
+
         }
     </style>
 </head>
 
 <body>
     <header>
-        <div id="header-nombre">
+        <div id="header-foto">
             <img src="" alt="">
             <div></div>
         </div>
@@ -221,6 +273,21 @@
                     <li>Historia</li>
                 </ul>
             </div>
+            <div>
+                <h2 class="section-titulo">EDUCACIÓN</h2>
+                <div class="titulo-linea"></div>
+                <ul>
+                    <li>Bachiller en Ciencias, Unidad Educativa Fiscal "Simón Bolívar" - 2020</li>
+                    <li>Ingeniería de software, Escuela Politécnica Nacional - 2020-Presente</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="section-titulo">CERTIFICACIONES</h2>
+                <div class="titulo-linea"></div>
+                <ul>
+                    <li>Introduction to Data Analytics with Python Alison, 2023</li>
+                </ul>
+            </div>
         </section>
         <!-- Columna derecha -->
         <section id="section-derecha">
@@ -238,7 +305,8 @@
                 <div class="titulo-linea"></div>
                 <ul>
                     <li>
-                        <a href="https://github.com/BryanGuano02/Proyecto_Traductor_Braille"  target="_blank">Traductor Español-Braille</a>
+                        <a href="https://github.com/BryanGuano02/Proyecto_Traductor_Braille" target="_blank">Traductor
+                            Español-Braille</a>
                         <p class="portafolio-texto">Construimos un traductor de expañol a braille
                             y viceversa para la creación de señalética que permita hacer de los espacios más inclusivos
                         </p>
@@ -248,21 +316,29 @@
                             <li>Diseñar la estructura de la aplicación en base a los principios SOLID</li>
                             <li>Codificar la lógica del programa</li>
                         </ul>
-                        <p class="portafolio-texto">Tecnologías: </p>
-                        <p>Java 12</p>
+                        <div>
+                            <p class="portafolio-subtitulo">Tecnologías: </p>
+                            <p>Java 12</p>
+                        </div>
 
                     </li>
                     <li>
-                        <a href="https://github.com/BryanGuano02/Prediccion-ventas" target="_blank">Aplicativo para predecir valores neto</a>
-                        <p class="portafolio-texto">Realicé análisis y limpieza de datos, la construcción de una red neuronal, y finalmente la 
-                            integración del modelo con agentes inteligentes que permitían leer datos, utilizar el modelo y mostrar el resultado
+                        <a href="https://github.com/BryanGuano02/Prediccion-ventas" target="_blank">Aplicativo para
+                            predecir valores neto</a>
+                        <p class="portafolio-texto">Realicé análisis y limpieza de datos, la construcción de una red
+                            neuronal, y finalmente la
+                            integración del modelo con agentes inteligentes que permitían leer datos, utilizar el modelo
+                            y mostrar el resultado
                         </p>
-                        <p class="portafolio-texto">Tecnologías: </p>
-                        <p>Java 12, Python 3.12.4, Jade</p>
+                        <div>
+                            <p class="portafolio-subtitulo">Tecnologías: </p>
+                            <p>Java 12, Python 3.12.4, Jade</p>
+                        </div>
 
                     </li>
                     <li>
-                        <a href="https://github.com/BryanGuano02/Proyecto-Gestion-Condominio"  target="_blank">Aplicativo para la Gestión de Condominios</a>
+                        <a href="https://github.com/BryanGuano02/Proyecto-Gestion-Condominio" target="_blank">Aplicativo
+                            para la Gestión de Condominios</a>
                         <p class="portafolio-texto">Formé parte en la construcción de un aplicación que permite la
                             gestionar el ingreso de personas, gestión de finanzas, reserva de espacios comunes
                         </p>
@@ -270,15 +346,21 @@
                         <ul>
                             <li>Liderar el grupo de trabajo encargado del módulo de gestión de finanzas del proyecto
                             </li>
-                            <li>Colaborar en el diseño e implementación del módulo considerando la integración con los demás módulos</li>
-                            <li>Comunicación constante con los líderes de los demás módulos para coordinar y resolver problemas</li>
+                            <li>Colaborar en el diseño e implementación del módulo considerando la integración con los
+                                demás módulos</li>
+                            <li>Comunicación constante con los líderes de los demás módulos para coordinar y resolver
+                                problemas</li>
                         </ul>
-                        <p class="portafolio-texto">Tecnologías: </p>
-                        <p>Java 12</p>
+                        <div>
+                            <p class="portafolio-subtitulo">Tecnologías: </p>
+                            <p>Java 12</p>
+                        </div>
                     </li>
                     <li>
-                        <a href="https://github.com/BryanGuano02/Proyecto-Taller-Mecanico"  target="_blank">Aplicación para Gestión de Taller Mecánico</a>
-                        <p class="portafolio-texto">Desarrollamos una aplicación para la gestión de varios talleres mecanicos 
+                        <a href="https://github.com/BryanGuano02/Proyecto-Taller-Mecanico" target="_blank">Aplicación
+                            para Gestión de Taller Mecánico</a>
+                        <p class="portafolio-texto">Desarrollamos una aplicación para la gestión de varios talleres
+                            mecanicos
                             conectándolos a un sistema de base de datos distribuidas
                         </p>
                         <p class="portafolio-subtitulo">Responsabilidades:</p>
@@ -287,11 +369,14 @@
                             <li>Colaborar en la creación de las bases de datos para cada nodo</li>
                             <li>Colaborar en el desarrollo de la GUI del aplicativo</li>
                         </ul>
-                        <p class="portafolio-texto">Tecnologías: </p>
-                        <p>Java 12, SQL Server 19, PostgreSQL 16.2</p>
+                        <div>
+                            <p class="portafolio-subtitulo">Tecnologías: </p>
+                            <p>Java 12, SQL Server 19, PostgreSQL 16.2</p>
+                        </div>
                     </li>
                     <li>
-                        <a href="https://github.com/BryanGuano02/Proyecto-C.Grafica-BII" target="_blank">Escenario de Videojuego de Terror</a>
+                        <a href="https://github.com/BryanGuano02/Proyecto-C.Grafica-BII" target="_blank">Escenario de
+                            Videojuego de Terror</a>
                         <p class="portafolio-texto">Contribuí en el desarrollo de un escenario de videojuego de terror
                         </p>
                         <p class="portafolio-subtitulo">Responsabilidades:</p>
@@ -299,26 +384,14 @@
                             <li>Colaborar en la implementación de la lógica del programa</li>
                             <li>Realizar pruebas de funcionalidad</li>
                         </ul>
-                        <p class="portafolio-texto">Tecnologías: </p>
-                        <p>C++23, OpenGL 4.6</p>
+                        <div>
+                            <p class="portafolio-subtitulo">Tecnologías: </p>
+                            <p>C++23, OpenGL 4.6</p>
+                        </div>
                     </li>
                 </ul>
             </div>
-            <div>
-                <h2 class="section-titulo">EDUCACIÓN</h2>
-                <div class="titulo-linea"></div>
-                <ul>
-                    <li>Bachiller en Ciencias, Unidad Educativa Fiscal "Simón Bolívar" - 2020</li>
-                    <li>Ingeniería de software, Escuela Politécnica Nacional - 2020-Presente</li>
-                </ul>
-            </div>
-            <div>
-                <h2 class="section-titulo">CERTIFICACIONES</h2>
-                <div class="titulo-linea"></div>
-                <ul>
-                    <li>Introduction to Data Analytics with Python Alison, 2023</li>
-                </ul>
-            </div>
+
         </section>
     </main>
 
