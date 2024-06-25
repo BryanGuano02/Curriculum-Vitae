@@ -86,14 +86,10 @@
             padding-right: 0.7em;
             font-size: 1.8em;
         }
-
-        .contacto-info p {
-            /* margin-right: 0.5em; */
+        #contacto-linkedin{
+            padding: 0;
+            font-weight: normal;
         }
-
-        /* .separardor-section {
-            height: 2.2em;
-        } */
 
         #section-izquierda {
             width: 32em;
@@ -152,7 +148,6 @@
         #section-derecha {
             width: 62em;
             padding-right: 3em;
-
         }
 
         @media (max-width: 720px) {
@@ -162,7 +157,7 @@
 
             #contacto-actividad {
                 font-size: 1.4em;
-                padding-bottom: 0.8em;
+                padding-bottom: 0.7em;
                 letter-spacing: 0.3em;
             }
 
@@ -180,6 +175,7 @@
             #contacto-nombre {
                 font-size: 2.5em;
                 padding-bottom: 0.1em;
+                padding-left: 0.125em;
             }
 
             .contacto-info i {
@@ -189,6 +185,30 @@
 
             .contacto-info p {
                 font-size: 1em;
+            }
+
+            #section-izquierda {
+                width: 18.5em;
+                padding-left: 1em;
+            }
+
+            #section-derecha {
+                width: 25em;
+                padding-right: 0.7em;
+            }
+
+            ul {
+                padding-left: 1.5em;
+            }
+
+            li,
+            p {
+                letter-spacing: 0.055em;
+                font-size: 0.95em;
+            }
+
+            li{
+                padding-bottom: 0.4em;
             }
 
         }
@@ -206,7 +226,9 @@
             <h1 id="contacto-actividad">Estudiante Ingeniería de Software</h1>
             <div class="contacto-info">
                 <i class="fa-brands fa-linkedin"></i>
-                <p>Bryan Guano</p>
+                <!-- <p>Bryan Guano</p> -->
+                <a id="contacto-linkedin" href="https://www.linkedin.com/in/bryan-guano-079b3a275/">Bryan Guano</a>
+                
             </div>
             <div class="contacto-info">
                 <i class="fa-solid fa-phone"></i>
