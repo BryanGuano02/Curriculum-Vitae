@@ -80,7 +80,8 @@
             padding-right: 0.7em;
             font-size: 1.8em;
         }
-        #contacto-linkedin{
+
+        #contacto-linkedin {
             padding: 0;
             font-weight: normal;
         }
@@ -104,6 +105,44 @@
             height: 0.23em;
             background: #727070;
             margin: 0 0 1.2em 0.5em;
+            transition: width 0.3s ease;
+        }
+
+        #habilidades-tecnicas:hover+.titulo-linea {
+            width: 22.2em;
+
+        }
+
+        #habilidades-relevantes:hover+.titulo-linea {
+            width: 25em;
+        }
+
+        #tech-stack:hover+.titulo-linea {
+            width: 11em;
+        }
+
+        #idiomas:hover+.titulo-linea {
+            width: 7.4em;
+        }
+
+        #intereses:hover+.titulo-linea {
+            width: 9.6em;
+        }
+
+        #educacion:hover+.titulo-linea {
+            width: 10.5em;
+        }
+
+        .section-titulo:hover+.titulo-linea {
+            width: 6em;
+        }
+
+        #certificaciones:hover+.titulo-linea {
+            width: 16.4em;
+        }
+
+        #proyectos:hover+.titulo-linea {
+            width: 26.5em;
         }
 
         li {
@@ -192,6 +231,19 @@
                 padding-right: 0.7em;
             }
 
+            #habilidades-tecnicas:hover+.titulo-linea,
+            #habilidades-relevantes:hover+.titulo-linea {
+                width: 12.2em;
+            }
+
+            .section-titulo:hover+.titulo-linea {
+                width: 6em;
+            }
+
+            #proyectos:hover+.titulo-linea {
+                width: 14.6em;
+            }
+
             ul {
                 padding-left: 1.5em;
             }
@@ -202,7 +254,7 @@
                 font-size: 0.95em;
             }
 
-            li{
+            li {
                 padding-bottom: 0.4em;
             }
 
@@ -222,7 +274,7 @@
                 <i class="fa-brands fa-linkedin"></i>
                 <!-- <p>Bryan Guano</p> -->
                 <a id="contacto-linkedin" href="https://www.linkedin.com/in/bryan-guano-079b3a275/">Bryan Guano</a>
-                
+
             </div>
             <div class="contacto-info">
                 <i class="fa-solid fa-phone"></i>
@@ -241,7 +293,7 @@
         <!-- Columna izquierda -->
         <section id="section-izquierda">
             <div>
-                <h2 class="section-titulo">HABILIDADES TÉCNICAS</h2>
+                <h2 class="section-titulo" id="habilidades-tecnicas">HABILIDADES TÉCNICAS</h2>
                 <div class="titulo-linea"></div>
                 <ul>
                     <li>Java</li>
@@ -252,7 +304,7 @@
                 </ul>
             </div>
             <div>
-                <h2 class="section-titulo">TECH STACK</h2>
+                <h2 class="section-titulo" id="tech-stack">TECH STACK</h2>
                 <div class="titulo-linea"></div>
                 <ul>
                     <li>Java 12</li>
@@ -264,7 +316,7 @@
                 </ul>
             </div>
             <div>
-                <h2 class="section-titulo">HABILIDADES RELEVANTES</h2>
+                <h2 class="section-titulo" id="habilidades-relevantes">HABILIDADES RELEVANTES</h2>
                 <div class="titulo-linea"></div>
                 <ul>
                     <li>Liderazgo de equipos</li>
@@ -274,7 +326,7 @@
                 </ul>
             </div>
             <div>
-                <h2 class="section-titulo">IDIOMAS</h2>
+                <h2 class="section-titulo" id="idiomas">IDIOMAS</h2>
                 <div class="titulo-linea"></div>
                 <ul>
                     <li>Español: Nativo</li>
@@ -282,7 +334,7 @@
                 </ul>
             </div>
             <div>
-                <h2 class="section-titulo">INTERESES</h2>
+                <h2 class="section-titulo" id="intereses">INTERESES</h2>
                 <div class="titulo-linea"></div>
                 <ul>
                     <li>Lectura</li>
@@ -290,7 +342,7 @@
                 </ul>
             </div>
             <div>
-                <h2 class="section-titulo">EDUCACIÓN</h2>
+                <h2 class="section-titulo" id="educacion">EDUCACIÓN</h2>
                 <div class="titulo-linea"></div>
                 <ul>
                     <li>Bachiller en Ciencias, Unidad Educativa Fiscal "Simón Bolívar" - 2020</li>
@@ -298,7 +350,7 @@
                 </ul>
             </div>
             <div>
-                <h2 class="section-titulo">CERTIFICACIONES</h2>
+                <h2 class="section-titulo" id="certificaciones">CERTIFICACIONES</h2>
                 <div class="titulo-linea"></div>
                 <ul>
                     <li>Introduction to Data Analytics with Python Alison, 2023</li>
@@ -308,7 +360,7 @@
         <!-- Columna derecha -->
         <section id="section-derecha">
             <div>
-                <h2 class="section-titulo">PERFIL PROFESIONAL</h2>
+                <h2 class="section-titulo">PERFIL</h2>
                 <div class="titulo-linea"></div>
                 <p>Estudiante de ingeniería de software enfocado en crecer laboralmente, desarrollar habilidades y
                     obtener
@@ -317,7 +369,7 @@
                     a contribuir activamente en proyectos que impulsen el desarrollo profesional y personal.</p>
             </div>
             <div>
-                <h2 class="section-titulo">PORTAFOLIO DE PROYECTOS</h2>
+                <h2 class="section-titulo" id="proyectos">PORTAFOLIO DE PROYECTOS</h2>
                 <div class="titulo-linea"></div>
                 <ul>
                     <li>
