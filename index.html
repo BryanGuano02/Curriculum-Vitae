@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículum de Bryan Guano</title>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,264 +16,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-        }
-
-        main {
-            display: flex;
-            padding-bottom: 2em;
-        }
-
-        header {
-            display: flex;
-            flex-direction: row;
-        }
-
-        #header-foto {
-            width: 18em;
-            height: 18em;
-            background: #000;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-
-        #header-contacto {
-            width: 75em;
-            height: 18em;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            background: #f2f2f2;
-            padding-left: 5em;
-        }
-
-        #contacto-nombre {
-            font-size: 3em;
-            padding-bottom: 0.3em;
-            font-family: 'IBM Plex Sans', serif;
-            letter-spacing: 0.35em;
-            word-spacing: 0.2em;
-        }
-
-        #contacto-actividad {
-            font-size: 2em;
-            padding-bottom: 0.8em;
-            font-family: "Montserrat", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 500;
-            letter-spacing: 0.43em;
-            font-weight: 550;
-        }
-
-        .contacto-info {
-            display: flex;
-            align-items: center;
-            padding: 0 0 1em 1em;
-        }
-
-        .contacto-info i {
-            padding-right: 0.7em;
-            font-size: 1.8em;
-        }
-
-        #contacto-linkedin {
-            padding: 0;
-            font-weight: normal;
-        }
-
-        #section-izquierda {
-            width: 32em;
-            padding-left: 3em;
-        }
-
-        .section-titulo {
-            font-size: 1.4em;
-            font-family: "Montserrat", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 650;
-            letter-spacing: 0.18em;
-            padding: 0.9em 0 0 0;
-        }
-
-        .titulo-linea {
-            width: 3.5em;
-            height: 0.23em;
-            background: #727070;
-            margin: 0 0 1.2em 0.5em;
-            transition: width 0.3s ease;
-        }
-
-        #habilidades-tecnicas:hover+.titulo-linea {
-            width: 22.2em;
-
-        }
-
-        #habilidades-relevantes:hover+.titulo-linea {
-            width: 25em;
-        }
-
-        #tech-stack:hover+.titulo-linea {
-            width: 11em;
-        }
-
-        #idiomas:hover+.titulo-linea {
-            width: 7.4em;
-        }
-
-        #intereses:hover+.titulo-linea {
-            width: 9.6em;
-        }
-
-        #educacion:hover+.titulo-linea {
-            width: 10.5em;
-        }
-
-        .section-titulo:hover+.titulo-linea {
-            width: 6em;
-        }
-
-        #certificaciones:hover+.titulo-linea {
-            width: 16.4em;
-        }
-
-        #proyectos:hover+.titulo-linea {
-            width: 26.5em;
-        }
-
-        li {
-            padding-bottom: 0.7em;
-        }
-
-        li,
-        p {
-            font-family: "Montserrat", sans-serif;
-            letter-spacing: 0.07em;
-        }
-
-        a {
-            color: #000;
-            font-size: 1.1em;
-            font-family: "Montserrat", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 600;
-            letter-spacing: 0.25em;
-            padding: 0.9em 0 0 0;
-        }
-
-        li div {
-            display: flex;
-        }
-
-        .portafolio-subtitulo {
-            font-weight: 600;
-            padding-right: 0.4em;
-        }
-
-        .portafolio-texto {
-            padding: 0.3em 0 0.3em 0;
-        }
-
-        #section-derecha {
-            width: 62em;
-            padding-right: 3em;
-        }
-
-        @media (max-width: 720px) {
-            #contacto-nombre {
-                font-size: 2.5em;
-                letter-spacing: 0.32em;
-            }
-
-            #contacto-actividad {
-                font-size: 1.4em;
-                padding-bottom: 0.7em;
-                letter-spacing: 0.3em;
-            }
-
-            #header-foto {
-                width: 40.4em;
-                height: 15em;
-            }
-
-            #header-contacto {
-                width: 75em;
-                height: 15em;
-                padding-left: 1.1em;
-            }
-
-            #contacto-nombre {
-                font-size: 2.5em;
-                padding-bottom: 0.1em;
-                padding-left: 0.125em;
-            }
-
-            .contacto-info i {
-                padding-right: 0.7em;
-                font-size: 1.2em;
-            }
-
-            .contacto-info p {
-                font-size: 1em;
-            }
-
-            #section-izquierda {
-                width: 18.5em;
-                padding-left: 1em;
-            }
-
-            #section-derecha {
-                width: 25em;
-                padding-right: 0.7em;
-            }
-
-            #habilidades-tecnicas:hover+.titulo-linea,
-            #habilidades-relevantes:hover+.titulo-linea {
-                width: 12.2em;
-            }
-
-            .section-titulo:hover+.titulo-linea {
-                width: 6em;
-            }
-
-            #proyectos:hover+.titulo-linea {
-                width: 14.6em;
-            }
-
-            ul {
-                padding-left: 1.5em;
-            }
-
-            li,
-            p {
-                letter-spacing: 0.055em;
-                font-size: 0.95em;
-            }
-
-            li {
-                padding-bottom: 0.4em;
-            }
-
-        }
-    </style>
 </head>
 
 <body>
     <header>
-        <div id="header-foto">
-            <img src="" alt="">
+        <div id="header-nombre">
+            <h1 id="contacto-nombre">BRYAN GUANO</h1>
+            <div id="header-linea"></div>
         </div>
         <div id="header-contacto">
-            <h1 id="contacto-nombre">BRYAN GUANO</h1>
+
             <h1 id="contacto-actividad">Estudiante Ingeniería de Software</h1>
             <div class="contacto-info">
                 <i class="fa-brands fa-linkedin"></i>
                 <a id="contacto-linkedin" href="https://www.linkedin.com/in/bryan-guano-079b3a275/">Bryan Guano</a>
-
             </div>
             <div class="contacto-info">
                 <i class="fa-solid fa-phone"></i>
