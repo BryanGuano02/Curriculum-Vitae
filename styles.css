@@ -106,7 +106,7 @@ header {
 }
 
 #habilidades-tecnicas:hover+.titulo-linea {
-    width: 22em;
+    width: 11em;
 }
 
 #habilidades-relevantes:hover+.titulo-linea {
@@ -229,7 +229,7 @@ li div {
 
     #habilidades-tecnicas:hover+.titulo-linea,
     #habilidades-relevantes:hover+.titulo-linea {
-        width: 12em;
+        width: 10em;
     }
 
     .section-titulo:hover+.titulo-linea {
